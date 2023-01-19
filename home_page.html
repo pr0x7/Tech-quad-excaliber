@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attedance Manager</title>
+    </head>
+    <body>
+        <div class="navbar-container">
+            
+            <div class="navbar">
+                <img src="college-studying.png" alt="degree.pro" width="50px">
+               
+               <marquee><h1 class="a">🎶ATTEDANCE MANAGER🎶</h1></marquee>
+               
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-container">
+                <div class="product" style="background-color: #1e3932">
+                    <div class="product-left">
+                        <img
+                            alt="image.pro"
+                            class="block"
+                            src="img_c.jpg " 
+                        />
+                    </div>
+                    <div class="product-right">
+                        <div class="product-title"
+                            style="font-size: 18px; margin-top: 20px">
+                          <center><h1>Attedance Manager🗓️</h1></center>
+                          <div class="T"><style>
+                            T {
+                                
+                                text-align: center;
+                                color:#fff;
+                                padding-top:10em;
+                              }
+                              
+                              * { color:rgba(255, 255, 255, 0.667); text-decoration: none;}</style>
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome Coders💜", "Welcome Developrs💙", "Welcome Innovators💚", "Welcome Creaters💛" ]'>
+                                  <span class="wrap"></span>
+                                </a>
+                              </h1>
+                              <script>var TxtType = function(el, toRotate, period) {
+                                this.toRotate = toRotate;
+                                this.el = el;
+                                this.loopNum = 0;
+                                this.period = parseInt(period, 10) || 2000;
+                                this.txt = '';
+                                this.tick();
+                                this.isDeleting = false;
+                            };
+                        
+                            TxtType.prototype.tick = function() {
+                                var i = this.loopNum % this.toRotate.length;
+                                var fullTxt = this.toRotate[i];
+                        
+                                if (this.isDeleting) {
+                                this.txt = fullTxt.substring(0, this.txt.length - 1);
+                                } else {
+                                this.txt = fullTxt.substring(0, this.txt.length + 1);
+                                }
+                        
+                                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+                        
+                                var that = this;
+                                var delta = 200 - Math.random() * 100;
+                        
+                                if (this.isDeleting) { delta /= 2; }
+                        
+                                if (!this.isDeleting && this.txt === fullTxt) {
+                                delta = this.period;
+                                this.isDeleting = true;
+                                } else if (this.isDeleting && this.txt === '') {
+                                this.isDeleting = false;
+                                this.loopNum++;
+                                delta = 500;
+                                }
+                        
+                                setTimeout(function() {
+                                that.tick();
+                                }, delta);
+                            };
+                        
+                            window.onload = function() {
+                                var elements = document.getElementsByClassName('typewrite');
+                                for (var i=0; i<elements.length; i++) {
+                                    var toRotate = elements[i].getAttribute('data-type');
+                                    var period = elements[i].getAttribute('data-period');
+                                    if (toRotate) {
+                                      new TxtType(elements[i], JSON.parse(toRotate), period);
+                                    }
+                                }
+                                var css = document.createElement("style");
+                                css.type = "text/css";
+                                css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                                document.body.appendChild(css);
+                            };</script></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #ff7b9a">
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 20px;
+                                color: #0c240b;
+                            "
+                        >
+                            Teacher's Login Portal
+                        </div>
+                        <div class="product-description">
+                           Click down to Login Or Sign in
+                        </div>
+                        <div
+                            class="product-button product-button-black"
+                            style="margin-top: 10px"
+                        >
+                            <a href="">Login</a>
+                        </div>
+                    </div>
+                    <div class="product-left">
+                        <img
+                            alt="Teacher.pro"
+                            class="block"
+                            src="teacher.jpg"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #f06464">
+                    <div class="product-left">
+                        <img
+                            alt="student.pro"
+                            class="block"
+                            src="student.jpg"
+                        />
+                    </div>
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 60px;
+                                color: #0c240b;
+                            "
+                        >
+                           Student's Login Portal
+                        </div>
+                        <div
+                            class="product-description"
+                            style="color: white; font-size: 22px"
+                        >
+                           Click Down to Login or Sign in
+                        </div>
+                        <div
+                            class="product-button product-button-black"
+                            style="margin-top: 10px"
+                        >
+                            <a href="login.html" target="_blank">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+           </body>
+</html>
